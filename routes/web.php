@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\PensilController;
 
 //equals with system.out.println()
 Route::get('/', function () {
@@ -80,3 +81,11 @@ Route::post('/pegawai/update', [PegawaiDBController:: class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController:: class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController:: class, 'cari']);
+
+Route::get('/pensil',[PensilController::class,'pensil']);
+Route::get('/pensil/tambah',[PensilController::class,'tambah']);
+Route::post('/pensil/store',[PensilController::class,'store']);
+Route::get('/pensil/edit/{id}',[PensilController::class,'edit']);
+Route::post('/pensil/update',[PensilController::class,'update']);
+Route::get('/pensil/hapus/{id}',[PensilController::class,'hapus']);
+Route::get('/pensil/cari',[PensilController::class,'cari']);
