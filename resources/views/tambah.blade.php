@@ -9,7 +9,6 @@
 	<br/>
 
 	<form action="/pegawai/store" method="post" class="form-horizontal">
-            {{-- CSRF Token --}}
 		{{ csrf_field() }}
             <div class="form-group has-success">
                 <label class="control-label col-sm-2" for="id1" for="nama">

@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PensilController;
+use App\Http\Controllers\KaryawanController;
 
 //equals with system.out.println()
 Route::get('/', function () {
@@ -89,3 +90,12 @@ Route::get('/pensil/edit/{id}',[PensilController::class,'edit']);
 Route::post('/pensil/update',[PensilController::class,'update']);
 Route::get('/pensil/hapus/{id}',[PensilController::class,'hapus']);
 Route::get('/pensil/cari',[PensilController::class,'cari']);
+
+Route::get('/pensil',[PensilController::class,'pensil']);
+
+Route::get('/karyawan',[KaryawanController::class,'karyawan']);
+Route::get('/karyawan/tambah',[KaryawanController::class,'tambah']);
+Route::post('/karyawan/store',[KaryawanController::class,'store']);
+Route::get('/karyawan/edit/{id}',[KaryawanController::class,'edit']);
+Route::post('/karyawan/update',[KaryawanController::class,'update']);
+Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus']);

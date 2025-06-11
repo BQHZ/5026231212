@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container mt-4">
-    <h3 class="mb-4 text-center text-primary">Daftar pensil Komputer</h3>
+    <h3 class="mb-4 text-center text-primary">Daftar pensil</h3>
     <hr class="mb-4">
 
     <div class="row mb-3 align-items-center justify-content-between">

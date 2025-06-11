@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40NZMDwmpzmO0qp+oHk5qLgXyVlYnJ+f/w0pB5/4B25ZtF5oTz9z/04b/jLq9g7+M+J8+2g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .jumbotron {
-            background-color: #9de2e2;
-            height: 100px;
+            background-color: #1d4ea9;
         }
     </style>
 </head>
 
 <body>
-    <div class="jumbotron text-center mx-auto">
-        <h1>5026231212 : Baqhiz Faruq S</h1>
+    <div class="jumbotron text-center mx-auto mb-0 ">
+        <h1 class="my-3">5026231212 : Baqhiz Faruq S</h1>
     </div>
 
     <nav class="navbar navbar-expand-sm bg-light">
@@ -39,7 +38,7 @@
                 <a class="nav-link" href="#">EAS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
+                <a class="nav-link" href="/karyawan">Latihan 1</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Latihan 2</a>
