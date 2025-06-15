@@ -7,6 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PensilController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\CounterController;
+use App\Http\Controllers\KeranjangController;
 
 //equals with system.out.println()
 Route::get('/', function () {
@@ -99,3 +101,11 @@ Route::post('/karyawan/store',[KaryawanController::class,'store']);
 Route::get('/karyawan/edit/{id}',[KaryawanController::class,'edit']);
 Route::post('/karyawan/update',[KaryawanController::class,'update']);
 Route::get('/karyawan/hapus/{id}',[KaryawanController::class,'hapus']);
+
+Route::get('/latihan2', [CounterController::class, 'latihan2']);
+
+Route::get('/keranjang', [App\Http\Controllers\KeranjangController::class, 'indexkeranjang']);
+Route::get('/keranjang/tambah', [App\Http\Controllers\KeranjangController::class, 'tambahkeranjang']);
+Route::get('/keranjang/tambah/{ID}', [App\Http\Controllers\KeranjangController::class, 'storekeranjang']);
+Route::post('/keranjang/update', [App\Http\Controllers\KeranjangController::class, 'updatekeranjang']);
+Route::get('/keranjang/hapus/{ID}', [App\Http\Controllers\KeranjangController::class, 'keranjangbelanja']);
