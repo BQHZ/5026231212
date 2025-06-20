@@ -1,3 +1,6 @@
+@extends('template')
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Simple Linktree</title>
   <style>
-    body {
+    /* body {
       background-color: #121212;
       color: #fff;
       font-family: Arial, sans-serif;
@@ -16,7 +19,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-    }
+    } */
     .container {
       width: 100%;
       max-width: 400px;
@@ -95,3 +98,5 @@
   </div>
 </body>
 </html>
+
+@endsection
